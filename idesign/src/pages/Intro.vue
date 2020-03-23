@@ -5,19 +5,20 @@
       src="~assets/quasar-logo-full.svg"
     >
     this is intro Page2
-    <!-- <VueMarkdown :source="htmlMD"></VueMarkdown> -->
+    <VueMarkdown :source="htmlMD"></VueMarkdown>
   </q-page>
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
 export default {
   name: 'IntroPage',
   components:{
-    // VueMarkdown
+    VueMarkdown
   },
   data() {
       return {
-          htmlMD:{}
+          htmlMD:"#### 12",
       }
   },
   props:{
@@ -25,11 +26,11 @@ export default {
   },
   created(){
     this.test();
-//     const url = `~spec/test.md`;
-// 　　axios.get(url).then((response) => {
-//    　　this.htmlMD = response.data;
-// 　　});
-//     print(this.htmlMD)
+    const url = `~spec/test.md`;
+    axios.get(url).then((response) => {
+      this.htmlMD = response.data;
+      print(response.data)
+　　});
   },
   methods:{
     test(){
