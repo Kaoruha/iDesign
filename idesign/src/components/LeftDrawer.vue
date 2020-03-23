@@ -7,6 +7,7 @@
         :content-active-style="contentActiveStyle"
         style="height: 100vh"
       >
+      <img src="~assets/logo.png" alt="" style="height:50px; margin:0 auto;">
         <q-input
           v-model="search"
           debounce="200"
