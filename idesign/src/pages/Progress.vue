@@ -8,13 +8,13 @@
     import VueMarkdown from 'vue-markdown'
 
     export default {
-        name: 'IntroPage',
+        name: 'ProgressPage',
         components: {
             VueMarkdown
         },
         data() {
             return {
-                url: `../../statics/spec/intro.md`,
+                url: `../../statics/spec/progress.md`,
                 htmlMD: '',
             }
         },

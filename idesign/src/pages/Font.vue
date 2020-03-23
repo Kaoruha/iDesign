@@ -1,15 +1,39 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
-    this is font Page
+  <q-page class="flex">
+    <VueMarkdown :source="htmlMD"></VueMarkdown>
   </q-page>
 </template>
 
 <script>
-export default {
-  name: 'FontPage'
-}
+    import VueMarkdown from 'vue-markdown'
+
+    export default {
+        name: 'FontPage',
+        components: {
+            VueMarkdown
+        },
+        data() {
+            return {
+                url: `../../statics/spec/font.md`,
+                htmlMD: '',
+            }
+        },
+        props: {},
+        created() {
+            this.getMDPage()
+        },
+        methods: {
+            getMDPage() {
+                this.$axios.get(this.url).then((response) => {
+                    this.htmlMD = response.data;
+                }).catch((error) => {
+                    alert(error)
+                });
+            }
+        }
+    }
 </script>
+
+<style scoped>
+  @import '../css/markdown.css';
+</style>

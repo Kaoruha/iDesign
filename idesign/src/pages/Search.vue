@@ -8,13 +8,13 @@
     import VueMarkdown from 'vue-markdown'
 
     export default {
-        name: 'IntroPage',
+        name: 'SearchPage',
         components: {
             VueMarkdown
         },
         data() {
             return {
-                url: `../../statics/spec/intro.md`,
+                url: `../../statics/spec/search.md`,
                 htmlMD: '',
             }
         },

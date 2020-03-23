@@ -1,50 +1,260 @@
 <template>
   <q-drawer show-if-above v-model="left" side="left" bordered>
-    <div style="max-width: 350px">
-      <q-list bordered class="rounded-borders">
-        <q-expansion-item expand-separator icon="mail" label="I Design" default-opened>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/values">价值观</q-item>
-        </q-expansion-item>
-        <q-expansion-item expand-separator icon="mail" label="全局样式" default-opened>
-          <q-item class="item" to="/colors">色彩</q-item>
-          <q-item class="item" to="/layout">布局</q-item>
-          <q-item class="item" to="/font">字体</q-item>
-          <q-item class="item" to="/icon">图标</q-item>
-        </q-expansion-item>
-        <q-expansion-item expand-separator icon="mail" label="组件" default-opened>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-          <q-item class="item" to="/intro">介绍</q-item>
-        </q-expansion-item>
-      </q-list>
+    <div style="max-width: 351px; padding-right:-1px">
+      <q-scroll-area
+        :thumb-style="thumbStyle"
+        :content-style="contentStyle"
+        :content-active-style="contentActiveStyle"
+        style="height: 100vh"
+      >
+        <q-list bordered class="rounded-borders">
+          <q-expansion-item class="item-father"
+                            expand-separator
+                            v-for="nav in navList"
+                            :key="nav.title"
+                            :icon="nav.icon"
+                            :label="nav.title"
+                            v-model="nav.defaultOpen">
+            <q-item v-for="item in nav.subtitles" class="item" :key="item.name" :to="item.url">{{item.name}}</q-item>
+          </q-expansion-item>
+        </q-list>
+
+      </q-scroll-area>
+
     </div>
   </q-drawer>
 </template>
 
 
 <script>
-export default {
-  name: 'LeftDrawer',
-}
+    export default {
+        name: 'LeftDrawer',
+        data() {
+            return {
+                navList: [
+                    {
+                        title: 'I Design',
+                        icon: 'mail',
+                        defaultOpen: true,
+                        subtitles: [
+                            {
+                                name: '介绍',
+                                url: "/intro",
+                            },
+                            {
+                                name: '价值观',
+                                url: "/values",
+                            }
+                        ]
+                    },
+                    {
+                        title: '全局样式',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '颜色',
+                                url: "/color",
+                            },
+                            {
+                                name: '布局',
+                                url: "/layout",
+                            },
+                            {
+                                name: '字体',
+                                url: "/font",
+                            },
+                            {
+                                name: '图标',
+                                url: "/icon",
+                            },
+                            {
+                                name: '动效',
+                                url: "/motion",
+                            }
+                        ]
+                    },
+                    {
+                        title: '组件',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '导航',
+                                url: "/nav",
+                            },
+                            {
+                                name: '输入框',
+                                url: "/input",
+                            },
+                            {
+                                name: '按钮',
+                                url: "/button",
+                            },
+                            {
+                                name: '选择器',
+                                url: "/select",
+                            },
+                            {
+                                name: '复选框',
+                                url: "/checkbox",
+                            },
+                            {
+                                name: '开关',
+                                url: "/toggle",
+                            },
+                            {
+                                name: '状态栏',
+                                url: "/status",
+                            },
+                            {
+                                name: '搜索框',
+                                url: "/search",
+                            },
+                            {
+                                name: '滑块',
+                                url: "/slider",
+                            },
+                            {
+                                name: '日期选择器',
+                                url: "/date",
+                            },
+                            {
+                                name: '日期选择器',
+                                url: "/date",
+                            },
+                            {
+                                name: '步进器',
+                                url: "/stepper",
+                            },
+                            {
+                                name: '选项卡',
+                                url: "/tabs",
+                            },
+                            {
+                                name: '标签提示',
+                                url: "/tooltips",
+                            },
+                            {
+                                name: '穿梭框',
+                                url: "/transfer",
+                            },
+                            {
+                                name: '进度条',
+                                url: "/progress",
+                            },
+                            {
+                                name: '分页器',
+                                url: "/pagination",
+                            },
+                            {
+                                name: '弹框',
+                                url: "/messageBox",
+                            },
+                            {
+                                name: '通知',
+                                url: "/notification",
+                            }
+
+                        ]
+                    },
+                    {
+                        title: '云计算',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '概况',
+                                url: "/nav",
+                            },
+                            {
+                                name: '创建云主机',
+                                url: "/font",
+                            }
+                        ]
+                    },
+                    {
+                        title: '云存储',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '导航',
+                                url: "/nav",
+                            },
+                            {
+                                name: '字体',
+                                url: "/font",
+                            },
+                            {
+                                name: '图标',
+                                url: "/icon",
+                            }
+                        ]
+                    },
+                    {
+                        title: '云网络',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '导航',
+                                url: "/nav",
+                            },
+                            {
+                                name: '字体',
+                                url: "/font",
+                            },
+                            {
+                                name: '图标',
+                                url: "/icon",
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        computed: {
+            contentStyle() {
+                return {
+                    backgroundColor: 'rgba(1,1,1,0)',
+                    color: '#8e8e8e'
+                }
+            },
+
+            contentActiveStyle() {
+                return {
+                    backgroundColor: 'rgba(1,1,1,0)',
+                    color: '#8e8e8e'
+                }
+            },
+
+            thumbStyle() {
+                return {
+                    right: '2px',
+                    borderRadius: '10px',
+                    backgroundColor: 'rgba(0,0,0,0.2)',
+                    width: '5px',
+                    opacity: 0.75
+                }
+            }
+        }
+    }
 </script>
 
 
 <style lang="sass">
-.item
-  color: rgba(#000,1)
-  line-height: 2em !important
-  padding-left: 72px
-  cursor: pointer
+  .item-father
+    color: rgba(#3e3e3e, 1)
 
-  &:hover
-    cursor: pointer
-    color: #1976D2
+
+    .item
+      color: rgba(#8e8e8e, 1)
+      line-height: 2.2em !important
+      padding-left: 72px
+      cursor: pointer
+
+      &:hover
+        cursor: pointer
+        color: #1976D2
 </style>

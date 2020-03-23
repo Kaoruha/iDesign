@@ -8,13 +8,13 @@
     import VueMarkdown from 'vue-markdown'
 
     export default {
-        name: 'IntroPage',
+        name: 'ButtonPage',
         components: {
             VueMarkdown
         },
         data() {
             return {
-                url: `../../statics/spec/intro.md`,
+                url: `../../statics/spec/button.md`,
                 htmlMD: '',
             }
         },
