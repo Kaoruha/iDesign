@@ -14,8 +14,10 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
+    "markdown-loader": "^5.1.0",
     "quasar": "^1.0.0",
-    "vue-i18n": "^8.0.0"
+    "vue-i18n": "^8.0.0",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",
