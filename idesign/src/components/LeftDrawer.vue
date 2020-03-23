@@ -7,6 +7,18 @@
         :content-active-style="contentActiveStyle"
         style="height: 100vh"
       >
+        <q-input
+          v-model="search"
+          debounce="200"
+          filled
+          placeholder="i-stack spec v2.0"
+          hint="2020.03.23"
+          style="margin-bottom: 6px"
+        >
+          <template v-slot:append>
+            <q-icon name="search" />
+          </template>
+        </q-input>
         <q-list bordered class="rounded-borders">
           <q-expansion-item class="item-father"
                             expand-separator
@@ -31,6 +43,7 @@
         name: 'LeftDrawer',
         data() {
             return {
+                search: '',
                 navList: [
                     {
                         title: 'I Design',
