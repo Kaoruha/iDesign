@@ -4,18 +4,11 @@
       <LeftDrawer></LeftDrawer>
       <q-page-container>
         <q-page>
-          <q-scroll-area
-            :thumb-style="thumbStyle"
-            :content-style="contentStyle"
-            :content-active-style="contentActiveStyle"
-            style="height: 100vh"
-            class="container"
-          >
-            <router-view></router-view>
-          </q-scroll-area>
-
+            <router-view class="main"></router-view>
         </q-page>
       </q-page-container>
+
+
     </q-layout>
   </div>
 </template>
@@ -36,7 +29,6 @@
 </script>
 
 <style lang="sass">
-  .container
-    padding: 36px
-
+    .main
+      padding: 36px 72px 36px 72px
 </style>

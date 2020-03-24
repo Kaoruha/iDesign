@@ -1,7 +1,21 @@
 h2 {
   font-size: 28px;
+  font-weight: 500;
+  color: #1f2f3d;
+  margin: 0;
+}
+
+h3 {
+  font-size: 22px;
   font-weight: 400;
   color: #1f2f3d;
+  margin: 36px 0 0 0;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: 400;
+  color: #4f4f4d;
   margin: 0;
 }
 
@@ -10,6 +24,10 @@ p,ul,ol {
   font-size: 14px;
   color: #5e6d82;
   line-height: 1.5em;
+  list-style-type: circle;
+}
+ul,ol{
+  padding-left: 20px;
 }
 
 tr{

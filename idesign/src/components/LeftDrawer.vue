@@ -7,7 +7,7 @@
         :content-active-style="contentActiveStyle"
         style="height: 100vh"
       >
-      <img src="~assets/logo.png" alt="" style="height:50px; margin:0 auto;">
+      <img src="~assets/logo.png" alt="" style="height:50px; padding-left: 60px">
         <q-input
           v-model="search"
           debounce="200"
@@ -28,7 +28,10 @@
                             :icon="nav.icon"
                             :label="nav.title"
                             v-model="nav.defaultOpen">
-            <q-item v-for="item in nav.subtitles" class="item" :key="item.name" :to="item.url">{{item.name}}</q-item>
+            <q-item v-for="item in nav.subtitles"
+                    class="item" :key="item.name"
+                    :to="item.url"
+                    active-class="item-active">{{item.name}}</q-item>
           </q-expansion-item>
         </q-list>
 
@@ -85,6 +88,10 @@
                             {
                                 name: '动效',
                                 url: "/motion",
+                            },
+                            {
+                                name: '深色模式',
+                                url: "/darkmode",
                             }
                         ]
                     },
@@ -179,11 +186,15 @@
                         subtitles: [
                             {
                                 name: '概况',
-                                url: "/nav",
+                                url: "/situation",
+                            },
+                            {
+                                name: '管理云主机',
+                                url: "/manage-instance",
                             },
                             {
                                 name: '创建云主机',
-                                url: "/font",
+                                url: "/create-instance",
                             }
                         ]
                     },
@@ -239,7 +250,7 @@
             contentActiveStyle() {
                 return {
                     backgroundColor: 'rgba(1,1,1,0)',
-                    color: '#8e8e8e'
+                    color: 'red'
                 }
             },
 
@@ -271,4 +282,8 @@
       &:hover
         cursor: pointer
         color: #1976D2
+
+  .item-active
+    color: rgba(#1976D2, 1) !important
+    background-color: rgba(#1976D2, 0.01);
 </style>

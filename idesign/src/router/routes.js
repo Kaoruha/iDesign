@@ -12,6 +12,7 @@ const routes = [
       { path: '/font', component: () => import('pages/Font.vue') },
       { path: '/icon', component: () => import('pages/Icon.vue') },
       { path: '/motion', component: () => import('pages/Motion.vue') },
+      { path: '/darkmode', component: () => import('pages/DarkMode.vue') },
       { path: '/nav', component: () => import('pages/Nav.vue') },
       { path: '/input', component: () => import('pages/Input.vue') },
       { path: '/button', component: () => import('pages/Button.vue') },
@@ -31,7 +32,10 @@ const routes = [
       { path: '/transfer', component: () => import('pages/Transfer.vue') },
       { path: '/pagination', component: () => import('pages/Pagination.vue') },
       { path: '/messageBox', component: () => import('pages/MessageBox.vue') },
-      { path: '/notification', component: () => import('pages/Notification.vue') }
+      { path: '/notification', component: () => import('pages/Notification.vue') },
+      { path: '/situation', component: () => import('pages/Situation.vue') },
+      { path: '/manage-instance', component: () => import('pages/ManageInstance.vue') },
+      { path: '/create-instance', component: () => import('pages/CreateInstance.vue') },
 
     ]
   }

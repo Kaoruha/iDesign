@@ -1,1 +1,3 @@
-# This is layout page
+## 布局
+i-stack采用栅格化布局，以便适应多尺寸终端的显示
+# TODO
