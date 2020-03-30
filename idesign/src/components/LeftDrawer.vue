@@ -12,7 +12,7 @@
           v-model="search"
           debounce="200"
           filled
-          placeholder="i-stack spec v2.0"
+          placeholder="i-stack spec v3.0"
           hint="2020.03.23"
           style="margin-bottom: 6px"
         >
@@ -141,10 +141,6 @@
                                 url: "/date",
                             },
                             {
-                                name: '日期选择器',
-                                url: "/date",
-                            },
-                            {
                                 name: '步进器',
                                 url: "/stepper",
                             },
@@ -233,6 +229,17 @@
                             {
                                 name: '图标',
                                 url: "/icon",
+                            }
+                        ]
+                    },
+                    {
+                        title: '增值服务',
+                        icon: 'mail',
+                        defaultOpen: false,
+                        subtitles: [
+                            {
+                                name: '容器服务',
+                                url: "/clusters",
                             }
                         ]
                     }

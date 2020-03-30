@@ -36,7 +36,7 @@ const routes = [
       { path: '/situation', component: () => import('pages/Situation.vue') },
       { path: '/manage-instance', component: () => import('pages/ManageInstance.vue') },
       { path: '/create-instance', component: () => import('pages/CreateInstance.vue') },
-
+      { path: '/clusters', component: () => import('pages/Clusters.vue') },
     ]
   }
 ]
