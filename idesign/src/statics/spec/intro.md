@@ -7,3 +7,6 @@ I Design 基于i-stack「亲民」、「安心」、「简单」三大设计价�
 目前设计主要针对i-stack云计算平台与在研OpenPAI，未来将支持更多产品，形成研究院统一产品理念。
 
 本文主要目的是辅助开发人员开发，帮助测试人员进行测试。
+
+结合 [「MockUP」](https://www.figma.com/file/b0yoTIYGXRLhjadpA7Vx20/i-stack-3.0?node-id=0%3A1 "i-stack 3.0")食用，效果更加。
+在注册完成后，请将账号邮箱发送至 <suny@rc.inesa.com> 邮件标明 「MockUP」 查看，或者微信、QQ联系。
