@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/create_instance.md`,
+                // url: '../../statics/spec/create_instance.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/create_instance.md',
                 htmlMD: '',
             }
         },

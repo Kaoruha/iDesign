@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/clusters.md`,
+                // url: '../../statics/spec/clusters.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/clusters.md',
                 htmlMD: '',
             }
         },

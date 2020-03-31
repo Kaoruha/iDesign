@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/messagebox.md`,
+                // url: '../../statics/spec/messagebox.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/messagebox.md',
                 htmlMD: '',
             }
         },

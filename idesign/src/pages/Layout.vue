@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/layout.md`,
+                // url: '../../statics/spec/layout.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/layout.md',
                 htmlMD: '',
             }
         },

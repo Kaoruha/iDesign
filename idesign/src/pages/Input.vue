@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/input.md`,
+                // url: '../../statics/spec/input.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/input.md',
                 htmlMD: '',
             }
         },

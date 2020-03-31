@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/transfer.md`,
+                // url: '../../statics/spec/transfer.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/transfer.md',
                 htmlMD: '',
             }
         },

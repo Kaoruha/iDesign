@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/manage_instance.md`,
+                // url:'../../statics/spec/manage_instance.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/manage_instance.md',
                 htmlMD: '',
             }
         },

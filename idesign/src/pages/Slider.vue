@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/slider.md`,
+                // url: '../../statics/spec/slider.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/slider.md',
                 htmlMD: '',
             }
         },

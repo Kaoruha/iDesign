@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/stepper.md`,
+                // url: '../../statics/spec/stepper.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/stepper.md',
                 htmlMD: '',
             }
         },

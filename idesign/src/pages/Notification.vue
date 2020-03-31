@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/notification.md`,
+                // url: '../../statics/spec/notification.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/notification.md',
                 htmlMD: '',
             }
         },

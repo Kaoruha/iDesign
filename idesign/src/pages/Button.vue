@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/button.md`,
+                // url: '../../statics/spec/button.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/button.md',
                 htmlMD: '',
             }
         },

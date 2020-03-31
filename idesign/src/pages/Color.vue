@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/color.md`,
+                // url: '../../statics/spec/color.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/color.md',
                 htmlMD: '',
             }
         },

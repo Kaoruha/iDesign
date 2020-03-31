@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/pagination.md`,
+                // url: '../../statics/spec/pagination.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/pagination.md',
                 htmlMD: '',
             }
         },

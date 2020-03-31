@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/popup_editor.md`,
+                // url: '../../statics/spec/popup_editor.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/popup_editor.md',
                 htmlMD: '',
             }
         },

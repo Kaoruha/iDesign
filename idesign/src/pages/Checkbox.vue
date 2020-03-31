@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/checkbox.md`,
+                // url: '../../statics/spec/checkbox.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/checkbox.md',
                 htmlMD: '',
             }
         },

@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/motion.md`,
+                // url: '../../statics/spec/motion.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/motion.md',
                 htmlMD: '',
             }
         },

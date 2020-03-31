@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/date.md`,
+                // url: '../../statics/spec/date.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/date.md',
                 htmlMD: '',
             }
         },

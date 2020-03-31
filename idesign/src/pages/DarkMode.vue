@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/darkmode.md`,
+                // url: '../../statics/spec/darkmode.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/darkmode.md',
                 htmlMD: '',
             }
         },

@@ -14,7 +14,8 @@
         },
         data() {
             return {
-                url: `../../statics/spec/font.md`,
+                // url: '../../statics/spec/font.md',
+                url:'https://raw.githubusercontent.com/Kaoruha/iDesign/master/idesign/src/statics/spec/font.md',
                 htmlMD: '',
             }
         },
