@@ -23,17 +23,17 @@
     },
     props: {},
     created() {
-      this.getMDPage()
+      this.get_markdown()
     },
     watch: {
       '$route': function (to, from) {
         //执行数据更新查询
         this.htmlMD = '';
-        this.getMDPage();
+        this.get_markdown();
       }
     },
     methods: {
-      getMDPage() {
+      get_markdown() {
         this.file_name = this.$route.path.split("/")[1]
         this.tar_url = this.url + this.file_name + '.md';
         this.$axios.get(this.tar_url).then((response) => {

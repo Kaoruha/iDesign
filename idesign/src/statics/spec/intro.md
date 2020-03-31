@@ -1,4 +1,4 @@
-![avatar](../../statics/app-logo-128x128.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/colors.jpg)
 ## 介绍
 i-stack是一个庞大且复杂的系统，数量多且功能复杂，而且变动和并发频繁，常常需要设计者与开发者能快速做出响应。同时研究院其他产品也存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。
 

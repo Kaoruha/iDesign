@@ -48,6 +48,7 @@
     name: 'LeftDrawer',
     data() {
       return {
+        left: false,
         search: '',
         navList: [
           {

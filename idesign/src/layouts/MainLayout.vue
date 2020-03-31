@@ -4,7 +4,7 @@
       <LeftDrawer></LeftDrawer>
       <q-page-container>
         <q-page>
-            <router-view class="main"></router-view>
+          <router-view class="main"></router-view>
         </q-page>
       </q-page-container>
 
@@ -14,21 +14,20 @@
 </template>
 
 <script>
-    import LeftDrawer from '../components/LeftDrawer.vue'
+  import LeftDrawer from '../components/LeftDrawer.vue'
 
-    export default {
-        components: {
-            LeftDrawer
-        },
-        data() {
-            return {
-                left: false
-            }
-        }
+  export default {
+    components: {
+      LeftDrawer
+    },
+    data() {
+      return {
+      }
     }
+  }
 </script>
 
 <style lang="sass">
-    .main
-      padding: 36px 72px 36px 72px
+  .main
+    padding: 36px 72px 36px 72px
 </style>

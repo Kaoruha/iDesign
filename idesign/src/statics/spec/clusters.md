@@ -20,9 +20,9 @@ Kubernetes版本：<font color=#E46161>「必选」</font>允许用户选择 Kub
 
 Docker版本：<font color=#E46161>「必选」</font>允许用户选择 Docker 版本，当前仅有一个，默认选中，当未来有多个版本时，默认选择一个最常用的版本。
 
-公开： 若勾选该模板将会跨项目显示，不勾选仅在当前项目显示。
+公开： 若勾选该模板将会跨项目显示，不勾选仅在当前项目显示。<font color=#E46161>默认关闭</font>
 
-开启负载均衡：若勾选，创建集群时，平台会自动创建额外的Nginx虚拟机，自动配置集群各节点的负载均衡
+开启负载均衡：若勾选，创建集群时，平台会自动创建额外的Nginx虚拟机，自动配置集群各节点的负载均衡。<font color=#E46161>默认关闭</font>
 
 ### Step2.节点规格
 
@@ -48,25 +48,25 @@ Docker版本：<font color=#E46161>「必选」</font>允许用户选择 Docker 
 
 DNS：<font color=#119BE4>「选填」</font>允许用户自定义集群内所有节点的 DNS 服务地址，默认为 114.114.114.114。
 
-TLS：若取消勾选集群内所有节点将不使用 TLS 证书，可以提高集群的传输效率，但是通信保密性与数据完整性将会下降。<font color=#E46161>默认勾选</font>
+TLS：若取消勾选集群内所有节点将不使用 TLS 证书，可以提高集群的传输效率，但是通信保密性与数据完整性将会下降。<font color=#E46161>默认关闭</font>
 
-分配浮动IP：若勾选，平台在集群创建时，会自动给每个节点分配浮动IP
+分配浮动IP：若勾选，平台在集群创建时，会自动给每个节点分配浮动IP。<font color=#E46161>默认关闭</font>
 
 ### Step4.插件
 
 ![avatar](../../statics/images/cluster_template_4_3.png)
 
-kubeapps：若勾选则在Kubernetes集群中安装kubeapps插件，为集群添加「服务目录」功能
+kubeapps：若勾选则在Kubernetes集群中安装kubeapps插件，为集群添加「服务目录」功能。<font color=#E46161>默认关闭</font>
 
 helm下载地址：<font color=#119BE4>「选填」</font>当kubeapps勾选时，允许用户设置helm下载地址。
 
-容器下载地址：<font color=#119BE4>「选填」</font>允许用户设置容器下载地址
+容器下载地址：<font color=#119BE4>「选填」</font>允许用户设置容器下载地址。
 
-监控：若勾选，平台在启动集群时，会自动安装 Prometheus 插件，为集群增加监控功能。
+监控：若勾选，平台在启动集群时，会自动安装 Prometheus 插件，为集群增加监控功能。<font color=#E46161>默认关闭</font>
 
-用户管理：若勾选，平台在启动集群时，会自动安装 KeyCloak 插件，为集群增加用户管理功能。
+用户管理：若勾选，平台在启动集群时，会自动安装 KeyCloak 插件，为集群增加用户管理功能。<font color=#E46161>默认关闭</font>
 
-istio：若勾选，平台在启动集群时，会自动安装 istio 插件，为集群增加容器微服务治理功能。
+istio：若勾选，平台在启动集群时，会自动安装 istio 插件，为集群增加容器微服务治理功能。<font color=#E46161>默认关闭</font>
 
 istio下载地址：<font color=#119BE4>「选填」</font>允许用户设置istio下载地址
 
