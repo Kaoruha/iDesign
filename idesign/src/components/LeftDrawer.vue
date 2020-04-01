@@ -57,6 +57,10 @@
             defaultOpen: true,
             subtitles: [
               {
+                name: '修订记录',
+                url: "/history",
+              },
+              {
                 name: '介绍',
                 url: "/intro",
               },
