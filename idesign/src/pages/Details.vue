@@ -23,8 +23,8 @@
     data() {
       return {
         file_name: '',
-        // url: '../../statics/spec/',
-        url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
+        url: '../../statics/spec/',
+        // url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
         editor_url: 'https://github.com/Kaoruha/iDesign/edit/master/idesign/src/statics/spec/',
         tar_url: '',
         editor_tar_url: '',

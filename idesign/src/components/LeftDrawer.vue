@@ -289,6 +289,41 @@
               {
                 name: '容器服务',
                 url: "/clusters",
+              },
+              {
+                name: '对象存储',
+                url: "/containers",
+              },
+              {
+                name: '数据处理',
+                url: "/data_processing",
+              },
+              {
+                name: '资源编排',
+                url: "/resource_arrangement",
+              },
+              {
+                name: '应用目录',
+                url: "/catalog",
+              },
+              {
+                name: '数据库',
+                url: "/databases",
+              },
+              {
+                name: '运维工具',
+                url: "/orders",
+              },
+            ]
+          },
+          {
+            title: '平台管理',
+            icon: 'mail',
+            defaultOpen: false,
+            subtitles: [
+              {
+                name: '容器服务',
+                url: "/clusters",
               }
             ]
           }

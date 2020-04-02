@@ -53,6 +53,12 @@ const routes = [
       {path: '/network_qos', component: () => import('pages/Details.vue')},
       {path: '/firewalls', component: () => import('pages/Details.vue')},
       {path: '/clusters', component: () => import('pages/Details.vue')},
+      {path: '/containers', component: () => import('pages/Details.vue')},
+      {path: '/data_processing', component: () => import('pages/Details.vue')},
+      {path: '/resource_arrangement', component: () => import('pages/Details.vue')},
+      {path: '/catalog', component: () => import('pages/Details.vue')},
+      {path: '/databases', component: () => import('pages/Details.vue')},
+      {path: '/orders', component: () => import('pages/Details.vue')},
     ]
   }
 ]
