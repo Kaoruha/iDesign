@@ -1,4 +1,4 @@
-## 容器服务
+# 容器服务
 
 容器服务是xxxx
 
@@ -10,7 +10,7 @@
 
 创建集群模板第一步需要填写模板的基本信息。
 
-![avatar](../../statics/images/cluster_template_1.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/cluster_template_1.png)
 
 模板名称：<font color=#E46161>「必填」</font>允许用户自定义集群模板的名称，<font color=#E46161>字符上限？？。</font>
 
@@ -26,7 +26,7 @@ Docker版本：<font color=#E46161>「必选」</font>允许用户选择 Docker 
 
 ### Step2.节点规格
 
-![avatar](../../statics/images/cluster_template_2.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/cluster_template_2.png)
 
 主节点类型：<font color=#E46161>「必填」</font>允许用户从云平台云主机配置中选择主节点的虚拟机配置
 
@@ -38,7 +38,7 @@ Docker版本：<font color=#E46161>「必选」</font>允许用户选择 Docker 
 
 ### Step3.网络设置
 
-![avatar](../../statics/images/cluster_template_3_2.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/cluster_template_3_2.png)
 
 外部网络：<font color=#E46161>「必填」</font>允许用户设置集群内部节点访问外部网络时所用的网络
 
@@ -54,7 +54,7 @@ TLS：若取消勾选集群内所有节点将不使用 TLS 证书，可以提高
 
 ### Step4.插件
 
-![avatar](../../statics/images/cluster_template_4_3.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/cluster_template_4_3.png)
 
 kubeapps：若勾选则在Kubernetes集群中安装kubeapps插件，为集群添加「服务目录」功能。<font color=#E46161>默认关闭</font>
 
@@ -76,7 +76,7 @@ istio下载地址：<font color=#119BE4>「选填」</font>允许用户设置ist
 
 在拥有集群模板后，用户可以按照给定的模板创建集群。
 
-![avatar](../../statics/images/create_cluster_2.png)
+![avatar](https://kaoruha.github.io/iDesign/idesign/src/statics/images/create_cluster_2.png)
 
 ### Step1.设置集群名称
 
