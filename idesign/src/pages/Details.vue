@@ -15,8 +15,8 @@
     data() {
       return {
         file_name: '',
-        // url: '../../statics/spec/',
-        url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
+        url: '../../statics/spec/',
+        // url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
         tar_url: '',
         htmlMD: '',
       }

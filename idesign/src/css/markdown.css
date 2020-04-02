@@ -34,6 +34,7 @@ p,ul,ol {
 }
 ul,ol{
   padding-left: 20px;
+  margin-bottom: 40px;
 }
 
 tr{

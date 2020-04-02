@@ -197,25 +197,41 @@
               {
                 name: '创建云主机',
                 url: "/create_instance",
+              },
+              {
+                name: '镜像',
+                url: "/images",
+              },
+              {
+                name: '密钥对',
+                url: "/keys",
               }
             ]
           },
           {
-            title: '云存储',
+            title: '云硬盘',
             icon: 'mail',
             defaultOpen: false,
             subtitles: [
               {
-                name: '导航',
-                url: "/nav",
+                name: '管理云硬盘',
+                url: "/manage_disk",
               },
               {
-                name: '字体',
-                url: "/font",
+                name: '创建云硬盘',
+                url: "/create_disk",
               },
               {
-                name: '图标',
-                url: "/icon",
+                name: '备份',
+                url: "/back_up",
+              },
+              {
+                name: '快照',
+                url: "/snapshot",
+              },
+              {
+                name: '快照策略',
+                url: "/snapshot_strategy",
               }
             ]
           },

@@ -37,6 +37,13 @@ const routes = [
       { path: '/situation', component: () => import('pages/Details.vue') },
       { path: '/manage_instance', component: () => import('pages/Details.vue') },
       { path: '/create_instance', component: () => import('pages/Details.vue') },
+      { path: '/images', component: () => import('pages/Details.vue') },
+      { path: '/keys', component: () => import('pages/Details.vue') },
+      { path: '/manage_disk', component: () => import('pages/Details.vue') },
+      { path: '/create_disk', component: () => import('pages/Details.vue') },
+      { path: '/back_up', component: () => import('pages/Details.vue') },
+      { path: '/snapshot', component: () => import('pages/Details.vue') },
+      { path: '/snapshot_strategy', component: () => import('pages/Details.vue') },
       { path: '/clusters', component: () => import('pages/Details.vue') },
     ]
   }
