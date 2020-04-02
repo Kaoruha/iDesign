@@ -1,5 +1,12 @@
 <template>
   <q-page class="flex">
+    <q-ajax-bar
+      ref="bar"
+      position="bottom"
+      color="accent"
+      size="10px"
+      skip-hijack
+    />
     <VueMarkdown :source="htmlMD"></VueMarkdown>
   </q-page>
 </template>
@@ -15,8 +22,8 @@
     data() {
       return {
         file_name: '',
-        url: '../../statics/spec/',
-        // url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
+        // url: '../../statics/spec/',
+        url: 'https://kaoruha.github.io/iDesign/idesign/src/statics/spec/',
         tar_url: '',
         htmlMD: '',
       }

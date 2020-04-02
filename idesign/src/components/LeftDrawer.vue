@@ -97,7 +97,7 @@
               },
               {
                 name: '深色模式',
-                url: "/darkmode",
+                url: "/dark_mode",
               }
             ]
           },
@@ -172,7 +172,7 @@
               },
               {
                 name: '弹框',
-                url: "/messagebox",
+                url: "/message_box",
               },
               {
                 name: '通知',
@@ -191,12 +191,12 @@
                 url: "/situation",
               },
               {
-                name: '管理云主机',
-                url: "/manage_instance",
-              },
-              {
                 name: '创建云主机',
                 url: "/create_instance",
+              },
+              {
+                name: '云主机管理',
+                url: "/manage_instance",
               },
               {
                 name: '镜像',
@@ -214,12 +214,12 @@
             defaultOpen: false,
             subtitles: [
               {
-                name: '管理云硬盘',
-                url: "/manage_disk",
+                name: '创建云硬盘',
+                url: "/create_volumes",
               },
               {
-                name: '创建云硬盘',
-                url: "/create_disk",
+                name: '云硬盘管理',
+                url: "/manage_volumes",
               },
               {
                 name: '备份',
@@ -241,16 +241,40 @@
             defaultOpen: false,
             subtitles: [
               {
-                name: '导航',
-                url: "/nav",
+                name: '网络拓扑',
+                url: "/network_topology",
               },
               {
-                name: '字体',
-                url: "/font",
+                name: '创建云网络',
+                url: "/create_network",
               },
               {
-                name: '图标',
-                url: "/icon",
+                name: '云网络管理',
+                url: "/manage_network",
+              },
+              {
+                name: '路由',
+                url: "/router",
+              },
+              {
+                name: '安全组',
+                url: "/security_groups",
+              },
+              {
+                name: '浮动IP',
+                url: "/floating_ips",
+              },
+              {
+                name: '负载均衡',
+                url: "/load_balance",
+              },
+              {
+                name: '网络限速',
+                url: "/network_qos",
+              },
+              {
+                name: '防火墙',
+                url: "/firewalls",
               }
             ]
           },
