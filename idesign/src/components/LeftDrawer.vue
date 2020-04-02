@@ -5,22 +5,25 @@
         :thumb-style="thumbStyle"
         :content-style="contentStyle"
         :content-active-style="contentActiveStyle"
-        style="height: 100vh"
+        style="height: 100vh;"
       >
-        <img src="~assets/logo.png" alt="" style="height:50px; padding-left: 60px">
-        <q-input
-          v-model="search"
-          debounce="200"
-          filled
-          placeholder="i-stack spec v3.0"
-          hint="2020.03.23"
-          style="margin-bottom: 6px"
-        >
-          <template v-slot:append>
-            <q-icon name="search"/>
-          </template>
-        </q-input>
-        <q-list bordered class="rounded-borders">
+        <div class="title">
+          <img src="~assets/logo.png" alt="" style="height:50px; padding-left: 60px">
+          <q-input
+            v-model="search"
+            debounce="200"
+            filled
+            placeholder="i-stack spec v3.0"
+            hint="2020.03.23"
+            style="margin-bottom: 6px"
+          >
+            <template v-slot:append>
+              <q-icon name="search"/>
+            </template>
+          </q-input>
+        </div>
+
+        <q-list bordered class="rounded-borders nav_list">
           <q-expansion-item class="item-father"
                             expand-separator
                             v-for="nav in navList"
@@ -325,7 +328,6 @@
   .item-father
     color: rgba(#3e3e3e, 1)
 
-
     .item
       color: rgba(#8e8e8e, 1)
       line-height: 2.2em !important
@@ -336,7 +338,17 @@
         cursor: pointer
         color: #1976D2
 
-    .item-active
-      color: rgba(#1976D2, 1) !important
-      background-color: rgba(#1976D2, 0.01);
+  .item-active
+    color: rgba(#1976D2, 1) !important
+    background-color: rgba(#1976D2, 0.01)
+
+  .title
+    position: fixed
+    background-color: rgba(#FFFFFF, 1)
+    z-index: 1
+    height: 140px
+    width: 100%
+
+  .nav_list
+    margin: 140px 0 160px
 </style>
