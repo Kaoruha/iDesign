@@ -62,6 +62,8 @@
 </style>
 
 <style lang="sass">
+
+
   .editor
     color: rgba(#8e8e8e,1)
     position: absolute
